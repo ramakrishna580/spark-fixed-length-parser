@@ -1,0 +1,17 @@
+ 16524  10/17/2012  3930621977   TXNPUES                   RHMXWPCP  Yes                              5,007.10
+191675  01/14/2013  2368183100   OUNHQEX XUFQONY                     Yes                             43,537.00
+191667  01/14/2013  3714468136   GHAKASC QHJXDFM                     Yes          3,172.53
+191673  01/14/2013  2632703881   PAHFSAP LUVIKXZ                     Yes            983.21
+ 80495  11/21/2012  2766389794   XDZANTV                   TGZGMOXG  Yes                                903.78
+ 80507  11/21/2012  4609266335   BWWYEZL                   USUKVMZO  Yes                                670.31
+ 80509  11/21/2012  1092717420   QJYPKVO                   DNUNTASS  Yes                                848.50
+ 80497  11/21/2012  3386366766   SOQLCMU                   BRHUMGJR  Yes                                  7.31
+191669  01/14/2013  5905893739   FYIWNKA QUAFDKD                     Yes          9,167.93
+191671  01/14/2013  2749355876   CBMJTLP NGFSEIS                     Yes            746.70
+191674  01/14/2013  4530359106   OTAVZGH ZUQFISZ                     No           7,035.74
+244819  02/04/2013  4679391677   EGHLQTI ABE                         No                              89,947.13
+ 96062  11/30/2012  5996493062   KTSVTADFF EHEHFMX         UBNQLRCC  Yes              7.10
+ 16527  10/17/2012  5595769375   ILCVJYC                   HCVZOUMY  Yes                                321.19
+191670  01/14/2013  1948028853   RPPDCWC UWODNIO                     No           9,293.80
+191672  01/14/2013  4938823703   CTMDXXP HXOXVFF                     No             175.00
+191668  01/14/2013  4207018603   DBZZULF QGDZQMD                     Yes            206.26
