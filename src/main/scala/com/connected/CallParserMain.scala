@@ -16,6 +16,14 @@ object CallParserMain {
       .getOrCreate()
 
     val dataframe = SingleFileParser.convertFixedFileToDf(spark, appConfig, hdfsFilePath)
+    dataframe.show(false)
 
+    dataframe.select("Account_No", "Credit_amount", "Debit_amount", "Post_Date")
+      .where(
+        to_date(unix_timestamp(col("Post_Date"), "MM/dd/yyyy")
+          .cast("TIMESTAMP")
+        )
+          .leq("2012-11-30")
+      ).show(false)
   }
 }
