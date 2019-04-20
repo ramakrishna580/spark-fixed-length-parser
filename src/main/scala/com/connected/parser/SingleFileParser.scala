@@ -1,8 +1,9 @@
 package com.connected.parser
 
 import java.util
+import java.util.Set
 
-import com.typesafe.config.{Config, ConfigFactory}
+import com.typesafe.config.{Config, ConfigFactory, ConfigValue}
 
 object SingleFileParser {
 
@@ -11,25 +12,14 @@ object SingleFileParser {
     val appConfig: Config = ConfigFactory.load
     val filePath = args(0)
 
+    val noOfColumns = appConfig.getConfig("single-file-config").entrySet().size
+    val confDataIterator1 = appConfig.getConfig("single-file-config").entrySet().toArray[util.Map.Entry[String, ConfigValue]](new Array[util.Map.Entry[String, ConfigValue]](noOfColumns))
+    val d: Array[Array[String]] = confDataIterator1.map( data => Array(data.getKey,data.getValue.unwrapped().asInstanceOf[util.ArrayList[Int]].get(0).toString,data.getValue.unwrapped().asInstanceOf[util.ArrayList[Int]].get(1).toString))
 
-    val confDataIterator = appConfig.getConfig("single-file-config").entrySet().iterator()
+    val confData = ParserConfig(d)
+    val selectSql = ParserConfig.convertConfigToSql(confData)
 
-    while(confDataIterator.hasNext) {
-
-          val confMapEntry = confDataIterator.next()
-          val columnName = confMapEntry.getKey.trim
-          val columnConf = appConfig.getAnyRef("single-file-config." + columnName).asInstanceOf[util.ArrayList[Int]]
-          val startIndex = columnConf.get(0)
-          val length = columnConf.get(1)
-
-
-      println(columnName)
-      println(startIndex)
-
-      println(length)
-    }
-
-
+    println(selectSql)
   }
 
 }
