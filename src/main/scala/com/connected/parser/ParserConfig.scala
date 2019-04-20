@@ -19,7 +19,7 @@ object ParserConfig {
     val columnsSqlArr = new Array[String](columnConfigData.length)
 
     for(i<-columnConfigData.indices){
-      columnsSqlArr(i) = s"TRIM(SUBSTR(FILE_DATA,${columnConfigData(i).startIndex},${columnConfigData(i).length})) AS ${columnConfigData(i).columnName}"
+      columnsSqlArr(i) = s"TRIM(SUBSTR(SingleFileParserValue,${columnConfigData(i).startIndex},${columnConfigData(i).length})) AS ${columnConfigData(i).columnName}"
     }
     columnsSqlArr.mkString(",\n")
   }

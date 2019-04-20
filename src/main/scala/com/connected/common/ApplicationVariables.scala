@@ -16,7 +16,7 @@ object ApplicationVariables {
 
    val spark = SparkSession.builder
      .appName("Parser").master("local[2]")
-     .enableHiveSupport()
+    // .enableHiveSupport()
      .config("hive.exec.dynamic.partition", "true")
      .config("hive.exec.dynamic.partition.mode", "nonstrict")
      .getOrCreate()
