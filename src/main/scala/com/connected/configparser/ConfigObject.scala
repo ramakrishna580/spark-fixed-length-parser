@@ -9,10 +9,15 @@ package com.connected.configparser
 case class ConfigObject(columnName: String, startIndex: Int, length: Int)
 
 /**
-  * This
+  * This object contains config parsing methods
   */
 object ConfigObject {
 
+  /**
+    * This method is used to convert the config to ConfigObject.
+    * @param parserConfArr Conf data extracted from config file.
+    * @return [['Array[ConfigObject]']] containing all columns data.
+    */
   def apply(parserConfArr: Array[Array[String]]): Array[ConfigObject] = {
 
     val finalFieldsConfig = new Array[ConfigObject](parserConfArr.length)
