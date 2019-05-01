@@ -1,7 +1,16 @@
 package com.connected.configparser
 
+/**
+  * This class is representation of config used to parser the data.
+  * @param columnName Name of the column to be returned.
+  * @param startIndex Starting index of the column data for the column.
+  * @param length Length of the data to be extracted.
+  */
 case class ConfigObject(columnName: String, startIndex: Int, length: Int)
 
+/**
+  * This
+  */
 object ConfigObject {
 
   def apply(parserConfArr: Array[Array[String]]): Array[ConfigObject] = {
