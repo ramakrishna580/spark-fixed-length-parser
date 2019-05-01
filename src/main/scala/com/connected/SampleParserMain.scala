@@ -5,7 +5,7 @@ import com.typesafe.config.{Config, ConfigFactory}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 
-object CallParserMain {
+object SampleParserMain {
   def main(args: Array[String]): Unit = {
 
     val hdfsFilePath = args(0)
