@@ -28,6 +28,11 @@ object ConfigObject {
     finalFieldsConfig
   }
 
+  /**
+    * This method will be converting the config object to sql string.
+    * @param columnConfigData [['Array[ConfigObject]']] containing all columns data.
+    * @return String as select column sql
+    */
   def convertConfigToSql(columnConfigData: Array[ConfigObject]):String = {
 
     val columnsSqlArr = new Array[String](columnConfigData.length)
